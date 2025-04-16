@@ -3,7 +3,7 @@
 	<Profile sr="prof12" ve="2">
 		<cdate>1744304806511</cdate>
 		<clp>true</clp>
-		<edate>1744304830396</edate>
+		<edate>1744828048804</edate>
 		<flags>8</flags>
 		<id>12</id>
 		<mid0>2</mid0>
@@ -22,7 +22,7 @@
 	<Profile sr="prof13" ve="2">
 		<cdate>1744304904693</cdate>
 		<clp>true</clp>
-		<edate>1744304954624</edate>
+		<edate>1744828049416</edate>
 		<flags>8</flags>
 		<id>13</id>
 		<mid0>2</mid0>
@@ -46,7 +46,7 @@
 	</Profile>
 	<Profile sr="prof18" ve="2">
 		<cdate>1744311074767</cdate>
-		<edate>1744315974835</edate>
+		<edate>1744828049993</edate>
 		<flags>8</flags>
 		<id>18</id>
 		<mid0>40</mid0>
@@ -66,15 +66,15 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1744300166182</cdate>
 		<name>ServiceStatus</name>
-		<pids>18,13,12</pids>
+		<pids>13,18,12</pids>
 		<scenes>ServiceStatusMainScene</scenes>
-		<tids>4,16,2,39,8,6,40,10,3,5,14,20,15,9,11</tids>
+		<tids>41,42,15,39,10,4,16,5,20,40,14,2,11,17,8,3,6,9</tids>
 		<Kid sr="Kid">
 			<launchID>11</launchID>
 			<pkg>com.github.poqdavid.servicestatus</pkg>
 			<vTarg>29</vTarg>
-			<vnme>2.0</vnme>
-			<vnum>3</vnum>
+			<vnme>3.0</vnme>
+			<vnum>4</vnum>
 		</Kid>
 		<Share sr="Share">
 			<b>false</b>
@@ -106,121 +106,163 @@
 			<nme>mw_action_settings_input_antenna</nme>
 		</Img>
 		<ProfileVariable sr="pv0">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>0</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Auto SIM Restart</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%autosimrestart</pvn>
+			<pvn>%ss_autosimrestart</pvn>
 			<pvt>onoff</pvt>
 			<pvv>0</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
 		<ProfileVariable sr="pv1">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>1</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Enable TTS</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%enabletts</pvn>
+			<pvn>%ss_enabletts</pvn>
 			<pvt>onoff</pvt>
 			<pvv>1</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
+		<ProfileVariable sr="pv10">
+			<clearout>false</clearout>
+			<exportval>media</exportval>
+			<immutable>false</immutable>
+			<pvci>true</pvci>
+			<pvd></pvd>
+			<pvdn>Notification Stream</pvdn>
+			<pvid>3</pvid>
+			<pvit>pj</pvit>
+			<pvn>%ss_notificationstream</pvn>
+			<pvt>t</pvt>
+			<pvv>media</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
 		<ProfileVariable sr="pv2">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>1</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Auto Restart SIM Timed</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%autosimrestarttimed</pvn>
+			<pvn>%ss_autosimrestarttimed</pvn>
 			<pvt>t</pvt>
 			<pvv>1</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
 		<ProfileVariable sr="pv3">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>5</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Hours</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%hours</pvn>
+			<pvn>%ss_hours</pvn>
 			<pvt>n</pvt>
 			<pvv>5</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
 		<ProfileVariable sr="pv4">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>50</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Minutes</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%minutes</pvn>
+			<pvn>%ss_minutes</pvn>
 			<pvt>n</pvt>
 			<pvv>50</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
 		<ProfileVariable sr="pv5">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>350</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Timer minutes</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%timermins</pvn>
+			<pvn>%ss_timermins</pvn>
 			<pvt>n</pvt>
-			<pvv>306</pvv>
+			<pvv>350</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
 		<ProfileVariable sr="pv6">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>1</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Timer run</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%timerrun</pvn>
+			<pvn>%ss_timerrun</pvn>
 			<pvt>onoff</pvt>
 			<pvv>1</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
 		<ProfileVariable sr="pv7">
-			<clearout>true</clearout>
-			<exportval></exportval>
+			<clearout>false</clearout>
+			<exportval>0</exportval>
 			<immutable>false</immutable>
 			<pvci>true</pvci>
 			<pvd></pvd>
 			<pvdn>Timer reset</pvdn>
 			<pvid>3</pvid>
 			<pvit>pj</pvit>
-			<pvn>%timerrest</pvn>
+			<pvn>%ss_timerrest</pvn>
 			<pvt>onoff</pvt>
 			<pvv>0</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv8">
+			<clearout>false</clearout>
+			<exportval>15</exportval>
+			<immutable>false</immutable>
+			<pvci>true</pvci>
+			<pvd></pvd>
+			<pvdn>Timer Warn Mins</pvdn>
+			<pvid>3</pvid>
+			<pvit>pj</pvit>
+			<pvn>%ss_timerwarnmins</pvn>
+			<pvt>n</pvt>
+			<pvv>15</pvv>
+			<strout>true</strout>
+		</ProfileVariable>
+		<ProfileVariable sr="pv9">
+			<clearout>false</clearout>
+			<exportval>1</exportval>
+			<immutable>false</immutable>
+			<pvci>true</pvci>
+			<pvd></pvd>
+			<pvdn>Auto SIM Restart Timed Warn</pvdn>
+			<pvid>3</pvid>
+			<pvit>pj</pvit>
+			<pvn>%ss_autosimrestarttimedwarn</pvn>
+			<pvt>onoff</pvt>
+			<pvv>1</pvv>
 			<strout>true</strout>
 		</ProfileVariable>
 	</Project>
 	<Scene sr="sceneServiceStatusMainScene">
 		<cdate>1744301822832</cdate>
-		<edate>1744320144629</edate>
+		<edate>1744833605724</edate>
 		<gridSize>11</gridSize>
 		<heightLand>-1</heightLand>
 		<heightPort>1387</heightPort>
@@ -233,6 +275,18 @@
 			<geom>0,75,55,55,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">AutoSIMRestartChkbx</Str>
 			<Int sr="arg1" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
 		</CheckBoxElement>
 		<CheckBoxElement sr="elements1">
 			<checkchangeTask>10</checkchangeTask>
@@ -255,7 +309,7 @@
 		</CheckBoxElement>
 		<TextElement sr="elements10" ve="3">
 			<flags>4</flags>
-			<geom>54,149,370,55,-1,-1,-1,-1</geom>
+			<geom>54,149,364,55,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">AutoSIMRestartTimedLable</Str>
 			<Str sr="arg1" ve="3">Auto Restart SIM Timed</Str>
 			<Int sr="arg2" val="16"/>
@@ -269,7 +323,7 @@
 		<ButtonElement sr="elements11" ve="3">
 			<clickTask>20</clickTask>
 			<flags>4</flags>
-			<geom>13,510,676,162,-1,-1,-1,-1</geom>
+			<geom>13,833,676,162,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">ManualRestart</Str>
 			<Str sr="arg1" ve="3">Manual SIM Restart</Str>
 			<Int sr="arg2" val="16"/>
@@ -281,7 +335,7 @@
 		</ButtonElement>
 		<TextElement sr="elements12" ve="3">
 			<flags>4</flags>
-			<geom>0,223,128,198,-1,-1,-1,-1</geom>
+			<geom>0,219,128,167,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">HoursLable</Str>
 			<Str sr="arg1" ve="3">Hours:</Str>
 			<Int sr="arg2" val="16"/>
@@ -294,7 +348,7 @@
 		</TextElement>
 		<TextElement sr="elements13" ve="3">
 			<flags>4</flags>
-			<geom>326,223,128,198,-1,-1,-1,-1</geom>
+			<geom>314,219,128,167,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">MinutesLable</Str>
 			<Str sr="arg1" ve="3">Minutes:</Str>
 			<Int sr="arg2" val="13"/>
@@ -305,6 +359,75 @@
 			<Int sr="arg7" val="0"/>
 			<Int sr="arg8" val="0"/>
 		</TextElement>
+		<CheckBoxElement sr="elements14">
+			<checkchangeTask>41</checkchangeTask>
+			<flags>4</flags>
+			<geom>0,417,55,55,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">SIMRestartTimedWarnChkbx</Str>
+			<Int sr="arg1" val="0"/>
+		</CheckBoxElement>
+		<TextElement sr="elements15" ve="3">
+			<flags>4</flags>
+			<geom>54,417,416,55,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">SIMRestartTimedWarnLable</Str>
+			<Str sr="arg1" ve="3">SIM Restart Timed Warning</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<TextElement sr="elements16" ve="3">
+			<flags>4</flags>
+			<geom>0,479,128,167,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">MinutesWarnLable</Str>
+			<Str sr="arg1" ve="3">Minutes:</Str>
+			<Int sr="arg2" val="13"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FFFFFFFF</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Int sr="arg7" val="0"/>
+			<Int sr="arg8" val="0"/>
+		</TextElement>
+		<PickerElement sr="elements17">
+			<flags>4</flags>
+			<geom>127,479,128,167,-1,-1,-1,40</geom>
+			<valueselectedTask>42</valueselectedTask>
+			<Str sr="arg0" ve="3">MinWarnPicker</Str>
+			<Int sr="arg1" val="10"/>
+			<Int sr="arg2" val="60"/>
+			<Int sr="arg3" val="10"/>
+			<Int sr="arg4" val="1"/>
+			<Int sr="arg5" val="0"/>
+			<RectElement sr="background">
+				<flags>4</flags>
+				<geom>-1,-1,-1,-1,-1,-1,-1,-1</geom>
+				<Str sr="arg0" ve="3"/>
+				<Int sr="arg1" val="0"/>
+				<Str sr="arg2" ve="3"/>
+				<Str sr="arg3" ve="3"/>
+				<Int sr="arg4" val="0"/>
+				<Str sr="arg5" ve="3">#FF000000</Str>
+				<Int sr="arg6" val="0"/>
+				<Int sr="arg7" val="0"/>
+			</RectElement>
+		</PickerElement>
+		<ButtonElement sr="elements18" ve="3">
+			<clickTask>17</clickTask>
+			<flags>4</flags>
+			<geom>13,656,676,162,-1,-1,-1,-1</geom>
+			<Str sr="arg0" ve="3">TimeLeft</Str>
+			<Str sr="arg1" ve="3">Time Left</Str>
+			<Int sr="arg2" val="16"/>
+			<Int sr="arg3" val="100"/>
+			<Str sr="arg4" ve="3">#FF000000</Str>
+			<Str sr="arg5" ve="3"/>
+			<Int sr="arg6" val="0"/>
+			<Img sr="arg7" ve="2"/>
+		</ButtonElement>
 		<TextElement sr="elements2" ve="3">
 			<flags>4</flags>
 			<geom>54,75,280,55,-1,-1,-1,-1</geom>
@@ -334,7 +457,7 @@
 		<ButtonElement sr="elements4" ve="3">
 			<clickTask>6</clickTask>
 			<flags>4</flags>
-			<geom>13,698,676,162,-1,-1,-1,-1</geom>
+			<geom>13,1207,332,162,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">CheckPerm</Str>
 			<Str sr="arg1" ve="3">Check Permission</Str>
 			<Int sr="arg2" val="16"/>
@@ -347,7 +470,7 @@
 		<ButtonElement sr="elements5" ve="3">
 			<clickTask>8</clickTask>
 			<flags>4</flags>
-			<geom>13,885,676,162,-1,-1,-1,-1</geom>
+			<geom>13,1010,676,162,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">RunTest</Str>
 			<Str sr="arg1" ve="3">Test</Str>
 			<Int sr="arg2" val="16"/>
@@ -360,7 +483,7 @@
 		<ButtonElement sr="elements6" ve="3">
 			<clickTask>5</clickTask>
 			<flags>4</flags>
-			<geom>13,1206,676,162,-1,-1,-1,-1</geom>
+			<geom>356,1207,332,162,-1,-1,-1,-1</geom>
 			<Str sr="arg0" ve="3">ButtonClose</Str>
 			<Str sr="arg1" ve="3">Close</Str>
 			<Int sr="arg2" val="16"/>
@@ -372,18 +495,18 @@
 		</ButtonElement>
 		<PickerElement sr="elements7">
 			<flags>4</flags>
-			<geom>128,223,128,198,-1,-1,-1,40</geom>
+			<geom>127,219,128,167,-1,-1,-1,40</geom>
 			<valueselectedTask>15</valueselectedTask>
 			<Str sr="arg0" ve="3">HourPicker</Str>
 			<Int sr="arg1" val="0"/>
 			<Int sr="arg2" val="60"/>
 			<Int sr="arg3" val="5"/>
-			<Int sr="arg4" val="0"/>
+			<Int sr="arg4" val="1"/>
 			<Int sr="arg5" val="0"/>
 		</PickerElement>
 		<PickerElement sr="elements8">
 			<flags>4</flags>
-			<geom>449,223,128,198,-1,-1,-1,40</geom>
+			<geom>439,219,128,167,-1,-1,-1,40</geom>
 			<valueselectedTask>16</valueselectedTask>
 			<Str sr="arg0" ve="3">MinPicker</Str>
 			<Int sr="arg1" val="0"/>
@@ -419,7 +542,7 @@
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%enabletts</Str>
+			<Str sr="arg0" ve="3">%ss_enabletts</Str>
 			<Str sr="arg1" ve="3">0</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -436,7 +559,7 @@
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%enabletts</Str>
+			<Str sr="arg0" ve="3">%ss_enabletts</Str>
 			<Str sr="arg1" ve="3">1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -454,7 +577,7 @@
 	</Task>
 	<Task sr="task11">
 		<cdate>1744304599039</cdate>
-		<edate>1744318892786</edate>
+		<edate>1744832844858</edate>
 		<id>11</id>
 		<nme>OpenServiceStatusMainScene</nme>
 		<pri>100</pri>
@@ -479,45 +602,72 @@
 			<code>50</code>
 			<label>Load settings</label>
 			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
-			<Str sr="arg1" ve="3">AutoSIMRestartChkbx</Str>
+			<Str sr="arg1" ve="3">MinPicker</Str>
 			<Int sr="arg2">
-				<var>%autosimrestart</var>
+				<var>%ss_minutes</var>
 			</Int>
 		</Action>
 		<Action sr="act2" ve="7">
 			<code>50</code>
 			<label>Load settings</label>
 			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
-			<Str sr="arg1" ve="3">TTSChkbx</Str>
+			<Str sr="arg1" ve="3">AutoSIMRestartChkbx</Str>
 			<Int sr="arg2">
-				<var>%enabletts</var>
+				<var>%ss_autosimrestart</var>
 			</Int>
 		</Action>
 		<Action sr="act3" ve="7">
 			<code>50</code>
 			<label>Load settings</label>
 			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
-			<Str sr="arg1" ve="3">AutoSIMRestartTimedChkbx</Str>
+			<Str sr="arg1" ve="3">TTSChkbx</Str>
 			<Int sr="arg2">
-				<var>%autosimrestarttimed</var>
+				<var>%ss_enabletts</var>
 			</Int>
 		</Action>
 		<Action sr="act4" ve="7">
 			<code>50</code>
 			<label>Load settings</label>
 			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
-			<Str sr="arg1" ve="3">HourPicker</Str>
+			<Str sr="arg1" ve="3">AutoSIMRestartTimedChkbx</Str>
 			<Int sr="arg2">
-				<var>%hours</var>
+				<var>%ss_autosimrestarttimed</var>
 			</Int>
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>50</code>
 			<label>Load settings</label>
 			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
+			<Str sr="arg1" ve="3">HourPicker</Str>
+			<Int sr="arg2">
+				<var>%ss_hours</var>
+			</Int>
+		</Action>
+		<Action sr="act6" ve="7">
+			<code>50</code>
+			<label>Load settings</label>
+			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
 			<Str sr="arg1" ve="3">MinPicker</Str>
 			<Int sr="arg2">
-				<var>%minutes</var>
+				<var>%ss_minutes</var>
+			</Int>
+		</Action>
+		<Action sr="act7" ve="7">
+			<code>50</code>
+			<label>Load settings</label>
+			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
+			<Str sr="arg1" ve="3">MinWarnPicker</Str>
+			<Int sr="arg2">
+				<var>%ss_timerwarnmins</var>
+			</Int>
+		</Action>
+		<Action sr="act8" ve="7">
+			<code>50</code>
+			<label>Load settings</label>
+			<Str sr="arg0" ve="3">ServiceStatusMainScene</Str>
+			<Str sr="arg1" ve="3">SIMRestartTimedWarnChkbx</Str>
+			<Int sr="arg2">
+				<var>%ss_autosimrestarttimedwarn</var>
 			</Int>
 		</Action>
 		<Img sr="icn" ve="2">
@@ -531,7 +681,7 @@
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%autosimrestarttimed</Str>
+			<Str sr="arg0" ve="3">%ss_autosimrestarttimed</Str>
 			<Str sr="arg1" ve="3">0</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -548,7 +698,7 @@
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%autosimrestarttimed</Str>
+			<Str sr="arg0" ve="3">%ss_autosimrestarttimed</Str>
 			<Str sr="arg1" ve="3">1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -571,7 +721,7 @@
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%hours</Str>
+			<Str sr="arg0" ve="3">%ss_hours</Str>
 			<Str sr="arg1" ve="3">%new_val</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -603,7 +753,7 @@
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%minutes</Str>
+			<Str sr="arg0" ve="3">%ss_minutes</Str>
 			<Str sr="arg1" ve="3">%new_val</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -628,9 +778,38 @@
 			<Int sr="arg9" val="0"/>
 		</Action>
 	</Task>
+	<Task sr="task17">
+		<cdate>1744303792005</cdate>
+		<edate>1744303792005</edate>
+		<id>17</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>129</code>
+			<Str sr="arg0" ve="3">function convertMinsToTime(mins) {
+  var hours = Math.floor(mins / 60);
+  var minutes = mins % 60;
+  // Pad with zeros if necessary
+  var hourStr = (hours &lt; 10 ? hours : hours);
+  var minuteStr = (minutes &lt; 10 ? minutes : minutes);
+  return hourStr + " hours and " + minuteStr + " minutes";
+}
+
+var timeFormatted = convertMinsToTime(ss_timermins);
+
+
+flash("SIM is restarting in " + timeFormatted);
+
+if(ss_enabletts == 1) {
+say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5);
+}</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+		</Action>
+	</Task>
 	<Task sr="task2">
 		<cdate>1744300528067</cdate>
-		<edate>1744322828589</edate>
+		<edate>1744832872654</edate>
 		<id>2</id>
 		<nme>ServiceCheck</nme>
 		<pri>100</pri>
@@ -681,19 +860,15 @@
 			</ConditionList>
 		</Action>
 		<Action sr="act12" ve="7">
-			<code>559</code>
+			<code>129</code>
 			<label>TTS Notification</label>
-			<Str sr="arg0" ve="3">Restarting SIM</Str>
-			<Str sr="arg1" ve="3">default:default</Str>
-			<Int sr="arg2" val="5"/>
-			<Int sr="arg3" val="5"/>
-			<Int sr="arg4" val="5"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
+			<Str sr="arg0" ve="3">say("Restarting SIM", undefined, undefined, ss_notificationstream, 5, 5)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%enabletts</lhs>
+					<lhs>%ss_enabletts</lhs>
 					<op>2</op>
 					<rhs>1</rhs>
 				</Condition>
@@ -712,19 +887,15 @@
 			<Int sr="arg7" val="0"/>
 		</Action>
 		<Action sr="act14" ve="7">
-			<code>559</code>
+			<code>129</code>
 			<label>TTS Notification</label>
-			<Str sr="arg0" ve="3">Restarted SIM</Str>
-			<Str sr="arg1" ve="3">default:default</Str>
-			<Int sr="arg2" val="5"/>
-			<Int sr="arg3" val="5"/>
-			<Int sr="arg4" val="5"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
+			<Str sr="arg0" ve="3">say("Restarted SIM", undefined, undefined, ss_notificationstream, 5, 5)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%enabletts</lhs>
+					<lhs>%ss_enabletts</lhs>
 					<op>2</op>
 					<rhs>1</rhs>
 				</Condition>
@@ -819,19 +990,15 @@
 			<Str sr="arg9" ve="3"/>
 		</Action>
 		<Action sr="act8" ve="7">
-			<code>559</code>
+			<code>129</code>
 			<label>Service Status TTS Notification</label>
-			<Str sr="arg0" ve="3">Status is %CELLSRV</Str>
-			<Str sr="arg1" ve="3">default:default</Str>
-			<Int sr="arg2" val="5"/>
-			<Int sr="arg3" val="5"/>
-			<Int sr="arg4" val="5"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
+			<Str sr="arg0" ve="3">say("Status is " + global('CELLSRV'), undefined, undefined, ss_notificationstream, 5, 5)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%enabletts</lhs>
+					<lhs>%ss_enabletts</lhs>
 					<op>2</op>
 					<rhs>1</rhs>
 				</Condition>
@@ -842,7 +1009,7 @@
 			<coll>false</coll>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%autosimrestart</lhs>
+					<lhs>%ss_autosimrestart</lhs>
 					<op>2</op>
 					<rhs>1</rhs>
 				</Condition>
@@ -876,25 +1043,21 @@
 	</Task>
 	<Task sr="task3">
 		<cdate>1744301553657</cdate>
-		<edate>1744320517537</edate>
+		<edate>1744832840458</edate>
 		<id>3</id>
 		<nme>SimRestart</nme>
 		<rty>1</rty>
 		<showinnot>false</showinnot>
 		<Action sr="act0" ve="7">
-			<code>559</code>
+			<code>129</code>
 			<label>TTS Notification</label>
-			<Str sr="arg0" ve="3">Restarting SIM</Str>
-			<Str sr="arg1" ve="3">default:default</Str>
-			<Int sr="arg2" val="5"/>
-			<Int sr="arg3" val="5"/>
-			<Int sr="arg4" val="5"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
+			<Str sr="arg0" ve="3">say("Restarting SIM", undefined, undefined, ss_notificationstream, 5, 5)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%enabletts</lhs>
+					<lhs>%ss_enabletts</lhs>
 					<op>2</op>
 					<rhs>1</rhs>
 				</Condition>
@@ -913,19 +1076,15 @@
 			<Int sr="arg7" val="0"/>
 		</Action>
 		<Action sr="act2" ve="7">
-			<code>559</code>
-			<label>TTS Notification</label>
-			<Str sr="arg0" ve="3">Restarted SIM</Str>
-			<Str sr="arg1" ve="3">default:default</Str>
-			<Int sr="arg2" val="5"/>
-			<Int sr="arg3" val="5"/>
-			<Int sr="arg4" val="5"/>
-			<Int sr="arg5" val="1"/>
-			<Int sr="arg6" val="0"/>
-			<Int sr="arg7" val="0"/>
+			<code>129</code>
+			<label>Service Status TTS Notification</label>
+			<Str sr="arg0" ve="3">say("Restarted SIM", undefined, undefined, ss_notificationstream, 5, 5)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%enabletts</lhs>
+					<lhs>%ss_enabletts</lhs>
 					<op>2</op>
 					<rhs>1</rhs>
 				</Condition>
@@ -937,7 +1096,7 @@
 	</Task>
 	<Task sr="task39">
 		<cdate>1744314488240</cdate>
-		<edate>1744320535966</edate>
+		<edate>1744832846646</edate>
 		<id>39</id>
 		<nme>CalcTime</nme>
 		<pri>100</pri>
@@ -946,8 +1105,8 @@
 		<Action sr="act0" ve="7">
 			<code>547</code>
 			<label>CalcTime</label>
-			<Str sr="arg0" ve="3">%timermins</Str>
-			<Str sr="arg1" ve="3">(%hours * 60) + %minutes</Str>
+			<Str sr="arg0" ve="3">%ss_timermins</Str>
+			<Str sr="arg1" ve="3">(%ss_hours * 60) + %ss_minutes</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="1"/>
 			<Int sr="arg4" val="0"/>
@@ -960,7 +1119,7 @@
 	</Task>
 	<Task sr="task4">
 		<cdate>1744301648467</cdate>
-		<edate>1744318907860</edate>
+		<edate>1744832843037</edate>
 		<id>4</id>
 		<nme>CheckPerm</nme>
 		<rty>1</rty>
@@ -996,7 +1155,7 @@ Root Access
 	</Task>
 	<Task sr="task40">
 		<cdate>1744315913711</cdate>
-		<edate>1744320601632</edate>
+		<edate>1744833092231</edate>
 		<id>40</id>
 		<nme>ServiceStatusTimer</nme>
 		<pri>6</pri>
@@ -1007,7 +1166,7 @@ Root Access
 			<code>37</code>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%timerrun</lhs>
+					<lhs>%ss_timerrun</lhs>
 					<op>8</op>
 					<rhs>1</rhs>
 				</Condition>
@@ -1016,36 +1175,81 @@ Root Access
 		<Action sr="act1" ve="7">
 			<code>890</code>
 			<label>Subtract timer</label>
-			<Str sr="arg0" ve="3">%timermins</Str>
+			<Str sr="arg0" ve="3">%ss_timermins</Str>
 			<Int sr="arg1" val="1"/>
 			<Int sr="arg2" val="0"/>
 			<ConditionList sr="if">
 				<Condition sr="c0" ve="3">
-					<lhs>%timermins</lhs>
+					<lhs>%ss_timermins</lhs>
 					<op>7</op>
 					<rhs>-2</rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
+		<Action sr="act10" ve="7">
+			<code>38</code>
+		</Action>
 		<Action sr="act2" ve="7">
 			<code>37</code>
 			<coll>false</coll>
-			<label>Timed SIM Restart</label>
+			<label>Timer Warn</label>
 			<ConditionList sr="if">
 				<bool0>And</bool0>
 				<Condition sr="c0" ve="3">
-					<lhs>%autosimrestarttimed</lhs>
+					<lhs>%ss_autosimrestarttimed</lhs>
 					<op>2</op>
 					<rhs>1</rhs>
 				</Condition>
 				<Condition sr="c1" ve="3">
-					<lhs>%timermins</lhs>
+					<lhs>%ss_timermins</lhs>
 					<op>8</op>
-					<rhs>0</rhs>
+					<rhs>%ss_timerwarnmins</rhs>
 				</Condition>
 			</ConditionList>
 		</Action>
 		<Action sr="act3" ve="7">
+			<code>129</code>
+			<label>TTS Notification</label>
+			<Str sr="arg0" ve="3">say("SIM is restarting in " + %ss_timerwarnmins + " minutes", undefined, undefined, ss_notificationstream, 5, 5)</Str>
+			<Str sr="arg1" ve="3"/>
+			<Int sr="arg2" val="1"/>
+			<Int sr="arg3" val="45"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%ss_enabletts</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act4" ve="7">
+			<code>38</code>
+		</Action>
+		<Action sr="act5" ve="7">
+			<code>37</code>
+			<coll>true</coll>
+			<label>Timed SIM Restart</label>
+			<ConditionList sr="if">
+				<bool0>And</bool0>
+				<bool1>And</bool1>
+				<Condition sr="c0" ve="3">
+					<lhs>%ss_autosimrestarttimed</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+				<Condition sr="c1" ve="3">
+					<lhs>%ss_timermins</lhs>
+					<op>8</op>
+					<rhs>0</rhs>
+				</Condition>
+				<Condition sr="c2" ve="3">
+					<lhs>%ss_autosimrestarttimedwarn</lhs>
+					<op>2</op>
+					<rhs>1</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act6" ve="7">
 			<code>559</code>
 			<label>TTS Notification</label>
 			<Str sr="arg0" ve="3">Restarting SIM</Str>
@@ -1064,7 +1268,7 @@ Root Access
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act4" ve="7">
+		<Action sr="act7" ve="7">
 			<code>123</code>
 			<label>SIM Restart Command</label>
 			<Str sr="arg0" ve="3">setprop ctl.restart ril-daemon</Str>
@@ -1076,7 +1280,7 @@ Root Access
 			<Int sr="arg6" val="1"/>
 			<Int sr="arg7" val="0"/>
 		</Action>
-		<Action sr="act5" ve="7">
+		<Action sr="act8" ve="7">
 			<code>559</code>
 			<label>TTS Notification</label>
 			<Str sr="arg0" ve="3">Restarted SIM</Str>
@@ -1095,15 +1299,68 @@ Root Access
 				</Condition>
 			</ConditionList>
 		</Action>
-		<Action sr="act6" ve="7">
-			<code>38</code>
-		</Action>
-		<Action sr="act7" ve="7">
+		<Action sr="act9" ve="7">
 			<code>38</code>
 		</Action>
 		<Img sr="icn" ve="2">
 			<nme>mw_image_timer</nme>
 		</Img>
+	</Task>
+	<Task sr="task41">
+		<cdate>1744310224367</cdate>
+		<edate>1744310224367</edate>
+		<id>41</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ss_autosimrestarttimedwarn</Str>
+			<Str sr="arg1" ve="3">0</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%new_val</lhs>
+					<op>2</op>
+					<rhs>off</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+		<Action sr="act1" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ss_autosimrestarttimedwarn</Str>
+			<Str sr="arg1" ve="3">1</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+			<ConditionList sr="if">
+				<Condition sr="c0" ve="3">
+					<lhs>%new_val</lhs>
+					<op>2</op>
+					<rhs>on</rhs>
+				</Condition>
+			</ConditionList>
+		</Action>
+	</Task>
+	<Task sr="task42">
+		<cdate>1744310753206</cdate>
+		<edate>1744310753206</edate>
+		<id>42</id>
+		<pri>102</pri>
+		<Action sr="act0" ve="7">
+			<code>547</code>
+			<Str sr="arg0" ve="3">%ss_timerwarnmins</Str>
+			<Str sr="arg1" ve="3">%new_val</Str>
+			<Int sr="arg2" val="0"/>
+			<Int sr="arg3" val="0"/>
+			<Int sr="arg4" val="0"/>
+			<Int sr="arg5" val="3"/>
+			<Int sr="arg6" val="1"/>
+		</Action>
 	</Task>
 	<Task sr="task5">
 		<cdate>1744303133065</cdate>
@@ -1167,7 +1424,7 @@ Root Access
 		<pri>102</pri>
 		<Action sr="act0" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%autosimrestart</Str>
+			<Str sr="arg0" ve="3">%ss_autosimrestart</Str>
 			<Str sr="arg1" ve="3">0</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -1184,7 +1441,7 @@ Root Access
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%autosimrestart</Str>
+			<Str sr="arg0" ve="3">%ss_autosimrestart</Str>
 			<Str sr="arg1" ve="3">1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
