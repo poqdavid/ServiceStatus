@@ -66,15 +66,15 @@
 	<Project sr="proj0" ve="2">
 		<cdate>1744300166182</cdate>
 		<name>ServiceStatus</name>
-		<pids>13,18,12</pids>
+		<pids>18,13,12</pids>
 		<scenes>ServiceStatusMainScene</scenes>
-		<tids>41,42,15,39,10,4,16,5,20,40,14,2,11,17,8,3,6,9</tids>
+		<tids>40,16,6,39,14,5,2,3,15,9,4,42,10,8,17,41,20,11</tids>
 		<Kid sr="Kid">
 			<launchID>11</launchID>
 			<pkg>com.github.poqdavid.servicestatus</pkg>
 			<vTarg>29</vTarg>
-			<vnme>3.0</vnme>
-			<vnum>4</vnum>
+			<vnme>3.5</vnme>
+			<vnum>5</vnum>
 		</Kid>
 		<Share sr="Share">
 			<b>false</b>
@@ -97,7 +97,15 @@
     ⚙️ &lt;strong&gt;User-Friendly Settings Interface&lt;/strong&gt;&lt;br&gt;
     Easily toggle key features like TTS alerts and automatic SIM restart through a built-in settings UI—giving you full control over how the project behaves.
   &lt;/li&gt;
-&lt;/ul&gt;</d>
+&lt;/ul&gt;
+
+&lt;p&gt;
+  &lt;strong&gt;Donate:&lt;/strong&gt;&lt;br/&gt;
+  &lt;strong&gt;BTC Legacy:&lt;/strong&gt; 1Q2JQG3iCLZPT2iJfDLow1oQVGKmxheoAh&lt;br/&gt;
+  &lt;strong&gt;BTC Segwit:&lt;/strong&gt; bc1q8gurls0wjkfe43ygmrqmu2pzmyjetnrvgws9sr&lt;br/&gt;
+  &lt;strong&gt;BCH:&lt;/strong&gt; qrks52smlqw7d8700d77uqvmve03d4knzvd2vghaqz&lt;br/&gt;
+  &lt;strong&gt;ETH:&lt;/strong&gt; 0x7218779242a8425879B09969431c20F5eC1a192D
+&lt;/p&gt;</d>
 			<g>Utility,Phone,Samsung</g>
 			<p>true</p>
 			<t>OpenServiceStatusMainScene</t>
@@ -262,7 +270,7 @@
 	</Project>
 	<Scene sr="sceneServiceStatusMainScene">
 		<cdate>1744301822832</cdate>
-		<edate>1744833605724</edate>
+		<edate>1744886767945</edate>
 		<gridSize>11</gridSize>
 		<heightLand>-1</heightLand>
 		<heightPort>1387</heightPort>
@@ -793,7 +801,8 @@
   var minuteStr = (minutes &lt; 10 ? minutes : minutes);
   return hourStr + " hours and " + minuteStr + " minutes";
 }
-
+
+
 var timeFormatted = convertMinsToTime(ss_timermins);
 
 
@@ -809,7 +818,7 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 	</Task>
 	<Task sr="task2">
 		<cdate>1744300528067</cdate>
-		<edate>1744832872654</edate>
+		<edate>1744886778219</edate>
 		<id>2</id>
 		<nme>ServiceCheck</nme>
 		<pri>100</pri>
@@ -830,7 +839,7 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 		</Action>
 		<Action sr="act1" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%timerrun</Str>
+			<Str sr="arg0" ve="3">%ss_timerrun</Str>
 			<Str sr="arg1" ve="3">1</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -862,6 +871,7 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 		<Action sr="act12" ve="7">
 			<code>129</code>
 			<label>TTS Notification</label>
+			<se>false</se>
 			<Str sr="arg0" ve="3">say("Restarting SIM", undefined, undefined, ss_notificationstream, 5, 5)</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="1"/>
@@ -889,6 +899,7 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 		<Action sr="act14" ve="7">
 			<code>129</code>
 			<label>TTS Notification</label>
+			<se>false</se>
 			<Str sr="arg0" ve="3">say("Restarted SIM", undefined, undefined, ss_notificationstream, 5, 5)</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="1"/>
@@ -939,8 +950,8 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 		<Action sr="act3" ve="7">
 			<code>547</code>
 			<label>CalcTime</label>
-			<Str sr="arg0" ve="3">%timermins</Str>
-			<Str sr="arg1" ve="3">(%hours * 60) + %minutes</Str>
+			<Str sr="arg0" ve="3">%ss_timermins</Str>
+			<Str sr="arg1" ve="3">(%ss_hours * 60) + %ss_minutes</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="1"/>
 			<Int sr="arg4" val="0"/>
@@ -959,7 +970,7 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 		</Action>
 		<Action sr="act5" ve="7">
 			<code>547</code>
-			<Str sr="arg0" ve="3">%timerrun</Str>
+			<Str sr="arg0" ve="3">%ss_timerrun</Str>
 			<Str sr="arg1" ve="3">0</Str>
 			<Int sr="arg2" val="0"/>
 			<Int sr="arg3" val="0"/>
@@ -992,6 +1003,7 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 		<Action sr="act8" ve="7">
 			<code>129</code>
 			<label>Service Status TTS Notification</label>
+			<se>false</se>
 			<Str sr="arg0" ve="3">say("Status is " + global('CELLSRV'), undefined, undefined, ss_notificationstream, 5, 5)</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="1"/>
@@ -1043,7 +1055,7 @@ say("SIM is restarting in " + timeFormatted, undefined, undefined, "media", 5, 5
 	</Task>
 	<Task sr="task3">
 		<cdate>1744301553657</cdate>
-		<edate>1744832840458</edate>
+		<edate>1744886786395</edate>
 		<id>3</id>
 		<nme>SimRestart</nme>
 		<rty>1</rty>
@@ -1155,7 +1167,7 @@ Root Access
 	</Task>
 	<Task sr="task40">
 		<cdate>1744315913711</cdate>
-		<edate>1744833092231</edate>
+		<edate>1744863214665</edate>
 		<id>40</id>
 		<nme>ServiceStatusTimer</nme>
 		<pri>6</pri>
@@ -1210,7 +1222,7 @@ Root Access
 		<Action sr="act3" ve="7">
 			<code>129</code>
 			<label>TTS Notification</label>
-			<Str sr="arg0" ve="3">say("SIM is restarting in " + %ss_timerwarnmins + " minutes", undefined, undefined, ss_notificationstream, 5, 5)</Str>
+			<Str sr="arg0" ve="3">say("SIM is restarting in " + ss_timerwarnmins + " minutes", undefined, undefined, ss_notificationstream, 5, 5)</Str>
 			<Str sr="arg1" ve="3"/>
 			<Int sr="arg2" val="1"/>
 			<Int sr="arg3" val="45"/>
